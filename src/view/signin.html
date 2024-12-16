@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../output.css" rel="stylesheet" />
+    <link href="../svg.css" rel="stylesheet" />
+  </head>
+  <body class="m-0 p-0 box-border font-serif bg-sage-green relative">
+    <!-- Background -->
+    <div class="absolute inset-0 pointer-events-none"></div>
+
+    <!-- Content Div -->
+    <div
+      id="contentDiv"
+      class="w-full p-1.5vw bg-paper-pattern scale-90 transition-all transform duration-500 ease-out opacity-0"
+    >
+      <!--header start -->
+      <main class="h-screen grid grid-cols-10 border-2 border-black">
+        <div class="col-span-3 flex items-center justify-center">
+          <img
+            class="w-1/2 aspect-auto"
+            id="date"
+            src="../../public/photos/booknest2.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-span-7 flex items-center justify-center">
+          <div class="w-3/4 p-4 border-2 border-black">
+            <form action="/signin" method="POST" class="space-y-6">
+              <!-- Email Field -->
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                />
+              </div>
+              <!-- Password Field -->
+              <div>
+                <label
+                  for="password"
+                  class="block text-sm font-medium text-gray-700"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                />
+              </div>
+              <!-- Remember Me and Forgot Password -->
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <input
+                    id="remember_me"
+                    name="remember_me"
+                    type="checkbox"
+                    class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  />
+                  <label
+                    for="remember_me"
+                    class="ml-2 block text-sm text-gray-900"
+                    >Remember me</label
+                  >
+                </div>
+                <div>
+                  <a
+                    href="/forgot-password"
+                    class="text-sm text-blue-600 hover:underline"
+                    >Forgot password?</a
+                  >
+                </div>
+              </div>
+              <!-- Submit Button -->
+              <div>
+                <button
+                  type="submit"
+                  class="w-full py-2 px-4 bg-black text-white rounded-md"
+                >
+                  Sign In
+                </button>
+              </div>
+            </form>
+            <hr class="border-1 border-gray-500 my-4" />
+            <p class="text-center text-gray-500">
+              Don't have an account?
+              <a class="hover:underline text-blue-600" href="#"
+                >Create new account</a
+              >
+            </p>
+            <hr class="border-1 border-gray-500 my-4" />
+            <p class="text-center text-gray-500">
+              Sign in with:
+              <span><i class="fa-brands fa-google text-red-500 mx-1"></i></span>
+              <span
+                ><i class="fa-brands fa-facebook text-blue-500 mx-1"></i
+              ></span>
+            </p>
+          </div>
+        </div>
+      </main>
+      <!--header end -->
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

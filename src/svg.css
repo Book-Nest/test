@@ -1,0 +1,51 @@
+.button {
+  position: relative;
+}
+#svg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  transform: translateX(50%) translateY(-20%);
+  pointer-events: none;
+}
+#path1 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  fill: none;
+  stroke: #597e52;
+  stroke-width: 5;
+  transition: all 0.5s;
+}
+.button:hover #path1 {
+  stroke-dashoffset: 0;
+}
+.logo {
+  transition: filter 0.5s ease;
+}
+
+.logo:hover {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(37%) saturate(405%)
+    hue-rotate(64deg) brightness(103%) contrast(86%);
+}
+
+/* .hyphenated {
+  word-break: break-word;
+  hyphens: auto;
+} */
+
+@media (min-width: 320px) {
+  :root {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 500px) {
+  :root {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 1vw;
+  }
+}
