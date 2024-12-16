@@ -24,8 +24,11 @@
       class="w-full p-1.5vw bg-paper-pattern scale-90 transition-all transform duration-500 ease-out opacity-0"
     >
       <!--header start -->
-      <main class="h-screen grid grid-cols-10 border-2 border-black">
-        <div class="col-span-3 flex items-center justify-center">
+      <main class="min-h-screen grid grid-cols-10 border-2 border-black">
+        <div
+          class="col-span-3 flex flex-col gap-10 items-center justify-center"
+        >
+          <h1 class="text-gray-700 font-bold text-5xl">Sign In</h1>
           <img
             class="w-1/2 aspect-auto"
             id="date"
@@ -34,7 +37,7 @@
           />
         </div>
         <div class="col-span-7 flex items-center justify-center">
-          <div class="w-3/4 p-4 border-2 border-black">
+          <div class="sign-in-box w-3/4 p-20 border-2 border-black rounded-lg">
             <form action="/signin" method="POST" class="space-y-6">
               <!-- Email Field -->
               <div>
@@ -79,14 +82,14 @@
                   />
                   <label
                     for="remember_me"
-                    class="ml-2 block text-sm text-gray-900"
+                    class="ml-2 block text-sm text-gray-700"
                     >Remember me</label
                   >
                 </div>
                 <div>
                   <a
                     href="/forgot-password"
-                    class="text-sm text-blue-600 hover:underline"
+                    class="sign-in-link text-sm text-gray-700 transition-all duration-500 hover:underline"
                     >Forgot password?</a
                   >
                 </div>
@@ -101,19 +104,21 @@
                 </button>
               </div>
             </form>
-            <hr class="border-1 border-gray-500 my-4" />
-            <p class="text-center text-gray-500">
+            <hr class="border-1 border-gray-700 my-4" />
+            <p class="text-center text-gray-700">
               Don't have an account?
-              <a class="hover:underline text-blue-600" href="#"
+              <a class="sign-in-link hover:underline text-gray-700" href="#"
                 >Create new account</a
               >
             </p>
-            <hr class="border-1 border-gray-500 my-4" />
-            <p class="text-center text-gray-500">
+            <hr class="border-1 border-gray-700 my-4" />
+            <p class="text-center text-gray-700">
               Sign in with:
-              <span><i class="fa-brands fa-google text-red-500 mx-1"></i></span>
               <span
-                ><i class="fa-brands fa-facebook text-blue-500 mx-1"></i
+                ><i class="fa-brands fa-google sign-in-google mx-1"></i
+              ></span>
+              <span
+                ><i class="fa-brands fa-facebook sign-in-facebook mx-1"></i
               ></span>
             </p>
           </div>

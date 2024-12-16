@@ -34,6 +34,19 @@
   hyphens: auto;
 } */
 
+.sign-in-link,
+.sign-in-google,
+.sign-in-facebook {
+  transition: all 0.5s;
+}
+.sign-in-box:hover .sign-in-link,
+.sign-in-box:hover .sign-in-facebook {
+  color: #3b82f6;
+}
+.sign-in-box:hover .sign-in-google {
+  color: #ef4444;
+}
+
 @media (min-width: 320px) {
   :root {
     font-size: 3vw;
