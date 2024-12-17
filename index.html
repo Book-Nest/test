@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0; url=src/view/index.html">
     <title>Redirecting...</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .large-text {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .small-text {
+            font-size: 0.9em;
+            color: #555;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected, <a href="src/view/index.html">click here</a>.</p>
+    <div class="large-text">Hold tight...! Getting there...</div>
+    <div class="small-text">
+        If you are not redirected, <a href="src/view/index.html">click here</a>.
+    </div>
 </body>
 </html>
